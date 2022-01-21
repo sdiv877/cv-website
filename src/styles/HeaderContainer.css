@@ -2,3 +2,15 @@
     padding-top: 2.5vh;
     padding-bottom: 2.5vh;
 }
+
+.name-text {
+    font-size: 80px;
+}
+
+.qualification-text {
+    padding-top: 8px;
+}
+
+.email-button {
+    padding-top: 16px;
+}

@@ -1,10 +1,6 @@
 export type LinkName = 'GitHub' | 'CV' | 'LinkedIn'
 
-export interface LinkCardProps {
-    name: LinkName
-}
-
-export const GetLinkFromName = (name: LinkName) => {
+export const getLinkFromName = (name: LinkName) => {
     switch (name) {
         case 'CV':
             return "https://drive.google.com/file/d/1Gv09R9Wh3mHQTEuqRHYZTak6KZ51Nlwg/view";

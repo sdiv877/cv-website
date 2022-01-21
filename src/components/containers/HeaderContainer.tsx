@@ -1,12 +1,15 @@
 import React from 'react';
 
-import HeaderLogo from '../HeaderLogo';
+import TextView from '../TextView';
+import EmailButton from '../EmailButton';
 import '../../styles/HeaderContainer.css'
 
 const HeaderContainer = () => {
     return (
         <div className='header-container'>
-            <HeaderLogo />
+            <TextView className='name-text' text='Syon Divekar' />
+            <TextView className='qualification-text' text='BE(Hons)/Computer Sytems' />
+            <EmailButton className='email-button' />
         </div>
     );
 }

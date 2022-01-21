@@ -4,7 +4,9 @@ import SocialLinks from '../SocialLinks';
 
 const BodyContainer = () => {
     return (
-        <SocialLinks />
+        <div className='body-container'>
+            <SocialLinks />
+        </div>
     );
 }
 
