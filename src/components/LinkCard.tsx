@@ -1,7 +1,8 @@
 import React from 'react';
-import { Card, ButtonBase } from '@mui/material'
 
 import { LinkName, getLinkFromName } from '../utils/LinkCardUtil';
+import ExtLink from './ExtLink';
+import SimpleCard from './SimpleCard';
 import '../styles/LinkCard.css'
 
 export interface LinkCardProps {
@@ -11,11 +12,11 @@ export interface LinkCardProps {
 const LinkCard = (props: LinkCardProps) => {
     return (
         <div className='link-card-container'>
-            <ButtonBase className='link-referrer' href={getLinkFromName(props.name)} target='_blank' rel='noreferrer'>
-                <Card className='link-card' variant='outlined'>
+            <ExtLink className='link-referrer' href={getLinkFromName(props.name)}>
+                <SimpleCard className='link-card'>
                     <div className='link-text'>{props.name}</div>
-                </Card>
-            </ButtonBase>
+                </SimpleCard>
+            </ExtLink>
         </div>
     );
 }

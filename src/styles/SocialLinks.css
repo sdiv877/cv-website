@@ -1,0 +1,8 @@
+.social-links {
+    /* Center social-links */
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Sets the size of all the link-cards */
+    max-width: 650px;
+}

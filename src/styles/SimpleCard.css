@@ -1,0 +1,8 @@
+.simple-card {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    /** Just to make the card visible if there is no card content **/
+    min-height: 5px;
+}

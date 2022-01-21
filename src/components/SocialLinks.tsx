@@ -1,6 +1,7 @@
 import React from 'react';
 
 import LinkCard from './LinkCard';
+import '../styles/SocialLinks.css'
 
 const SocialLinks = () => {
     return (
