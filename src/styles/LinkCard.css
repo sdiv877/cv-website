@@ -2,14 +2,24 @@
     padding-top: 5px;
     padding-bottom: 5px;
 
+    /** Sets the padding on the sides of the link-card container **/
+    margin-left: 15px;
+    margin-right: 15px;
+
     /** Ensures MUI cards stay centered **/
     justify-content: center;
 }
 
+.link-referrer {
+    /** Sets max width of the link-card and the referrer **/
+    max-width: 700px;
+    width: 100%;
+}
+
 .link-card {
-    height: 110px;
-    width: 35vw;
-    min-width: 550px;
+    /** The link-card takes up the width provided by the referrer (max 700 w/ margin 15 **/
+    width: 100%;
+    height: 105px;
 
     /** Ensures MUI cards stay centered **/
     display: inline-block;
