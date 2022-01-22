@@ -29,6 +29,7 @@ const hoverStyle = getHoverStyle('Email');
 
 const StyledButton = styled(Button)({
     textTransform: 'none',
+    fontSize: '15px',
     fontFamily: '"Montserrat"',
     backgroundColor: 'white',
     color: 'black',

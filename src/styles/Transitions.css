@@ -1,0 +1,28 @@
+/** Fade Appearances **/
+.fade-appear {
+    opacity: 0;
+}
+
+.fade-appear-active {
+    opacity: 1;
+    transition: opacity 450ms;
+}
+
+/** Slide Appearances **/
+.slide-left-appear {
+    transform: translateX(-100%);
+}
+  
+.slide-left-appear-active {
+    transform: translateX(0%);
+    transition: transform 450ms;
+}
+
+.slide-top-appear {
+    transform: translateY(-100%);
+}
+  
+.slide-top-appear-active {
+    transform: translateY(0%);
+    transition: transform 450ms;
+}
