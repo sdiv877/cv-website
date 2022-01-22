@@ -7,8 +7,8 @@ import '../../styles/HeaderContainer.css'
 const HeaderContainer = () => {
     return (
         <div className='header-container'>
-            <TextView className='name-text' text='Syon Divekar' />
-            <TextView className='qualification-text' text='BE(Hons)/Computer Sytems' />
+            <TextView className='name-text'>Syon Divekar</TextView>
+            <TextView className='qualification-text'>BE(Hons)/Computer Sytems</TextView>
             <EmailButton className='email-button' />
         </div>
     );

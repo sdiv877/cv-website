@@ -1,14 +1,16 @@
 .header-container {
     padding-top: 2.5vh;
     padding-bottom: 2.5vh;
+
+    margin-left: 15px;
+    margin-right: 15px;
+
+    /* Center all text in the header */
+    text-align: center;
 }
 
 .name-text {
-    padding-top: 0px;
-
     font-size: 65px;
-    margin-left: 15px;
-    margin-right: 15px;
 }
 
 .qualification-text {

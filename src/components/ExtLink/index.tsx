@@ -1,5 +1,7 @@
 import React from 'react';
 
+import '../../styles/ExtLink.css'
+
 interface ExtLinkProps extends React.HTMLAttributes<HTMLAnchorElement> { 
     href: string | ''
 }

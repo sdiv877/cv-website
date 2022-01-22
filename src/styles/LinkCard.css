@@ -7,29 +7,10 @@
     margin-right: 15px;
 }
 
-/* .link-referrer {
-    No width: 100% needed as base card/referrer takes care of that
-} */
-
 .link-card {
     /* No width: 100% needed as base card/referrer takes care of that */
     height: 105px;
 
     /* Used for centering absolute child divs (i.e. link-text) */
     position: relative;
-}
-
-.link-card:hover {
-    background-color: #ccc;
-}
-
-.link-text {
-    color: black;
-    text-decoration: none;
-
-    /* Centers text in link-card */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }

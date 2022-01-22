@@ -1,3 +1,7 @@
 .ext-link {
-    width: 100%
+    width: 100%;
+
+    /* All text in ExtLink child divs is undecorated */
+    text-decoration: none;
+    color: black;
 }
