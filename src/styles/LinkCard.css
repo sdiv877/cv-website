@@ -5,7 +5,10 @@
     /* The transition properties are set here, but hover colours are set in LinkCard.tsx */
     transition: 0.2s;
     transition-property: background-color, color, border-colour;
-    transition-timing-function: ease-out
+    transition-timing-function: ease-out;
+
+    /* Stops <Grid/> from pouring out of link-card as a result of <Stack/> spacing */
+    overflow-y: hidden;
 }
 
 .centered-text {

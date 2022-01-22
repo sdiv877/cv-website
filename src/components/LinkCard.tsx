@@ -20,7 +20,7 @@ const LinkCard = (props: LinkCardProps) => {
             onMouseEnter={() => { setHovered(true) }} onMouseLeave={() => { setHovered(false) }} >
             <ExtLink className='link-referrer' href={getLinkFromName(props.name)}>
                 <SimpleCard className='link-card' style={hovered ? hoverStyle : undefined}>
-                    <Grid container spacing={2}>
+                    <Grid container>
                         <Grid className='centered-icon' item xs={2}>
                             {getIconFromName(props.name)}
                         </Grid>
