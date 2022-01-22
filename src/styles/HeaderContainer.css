@@ -1,22 +1,39 @@
 .header-container {
-    padding-top: 4px;
-    padding-bottom: 20px;
-
-    margin-left: 15px;
-    margin-right: 15px;
-
+    padding-bottom: 10px;
     /* Center all text in the header */
     text-align: center;
 }
 
 .name-text {
+    padding-top: 4px;
+    padding-bottom: 12px;
+
     font-size: 65px;
+    color: white;
+    background-color: #2195f3;
 }
+
+@media screen and (max-width: 480px) {
+    .name-text {
+        font-size: 13vw
+    }
+  }
+  
+  @media screen and (max-width: 290px) {
+    .name-text {
+        font-size: 36px;
+    }
+  }
 
 .qualification-text {
     padding-top: 8px;
+
+    background-color: #90Caf9;
 }
 
 .email-button {
-    padding-top: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-color: #90Caf9;
 }

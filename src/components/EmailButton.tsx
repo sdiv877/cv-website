@@ -1,22 +1,26 @@
 import React from 'react';
 import { styled } from '@mui/material/styles';
-import { Button } from '@mui/material';
+import { Button, Tooltip, Typography } from '@mui/material';
 import Email from '@mui/icons-material/Email'
 
-import { getHoverStyle } from '../utils/LinkCardUtil';
+import { getHoverStyle, getLinkFromName } from '../utils/LinkCardUtil';
 
 interface EmailButtonProps extends React.HTMLAttributes<HTMLDivElement> { }
+
+const emailAddress = getLinkFromName('Email');
 
 const EmailButton = (props: EmailButtonProps) => {
     return (
         <div className={props.className}>
-            <StyledButton
-                variant='outlined'
-                startIcon={<Email />}
-                href="mailto: sdiv877@aucklanduni.ac.nz"
-            >
-                Email
-            </StyledButton>
+            <Tooltip arrow title={EmailText}>
+                <StyledButton
+                    variant='outlined'
+                    startIcon={<Email />}
+                    href={`mailto: ${emailAddress}`}
+                >
+                    Email
+                </StyledButton>
+            </Tooltip>
         </div>
     );
 }
@@ -26,9 +30,17 @@ const hoverStyle = getHoverStyle('Email');
 const StyledButton = styled(Button)({
     textTransform: 'none',
     fontFamily: '"Montserrat"',
+    backgroundColor: 'white',
     color: 'black',
-    borderColor: 'black',
+    borderColor: '#ccc',
+    borderWidth: '1px',
     '&:hover': hoverStyle
 });
+
+const EmailText = (
+    <Typography fontSize={15} fontFamily='"Montserrat"'>
+        {emailAddress}
+    </Typography>
+);
 
 export default EmailButton;
