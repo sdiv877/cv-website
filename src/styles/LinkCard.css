@@ -1,10 +1,11 @@
 .link-card {
     /* No width: 100% needed as simple card/referrer takes care of that */
     height: 105px;
-}
 
-.link-card:hover {
-    background-color: #ccc;
+    /* The transition properties are set here, but hover colours are set in LinkCard.tsx */
+    transition: 0.2s;
+    transition-property: background-color, color, border-colour;
+    transition-timing-function: ease-out
 }
 
 .centered-text {
@@ -15,6 +16,6 @@
 
 .centered-icon {
     /* Center based on height of link-card */
-    line-height: 114px;
+    line-height: 122px;
     text-align: center;
 }

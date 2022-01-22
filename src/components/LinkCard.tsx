@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Grid } from '@mui/material';
 
-import { LinkName, getLinkFromName, getIconFromName } from '../utils/LinkCardUtil';
+import { LinkName, getLinkFromName, getIconFromName, getHoverStyle } from '../utils/LinkCardUtil';
 import ExtLink from './ExtLink';
 import SimpleCard from './SimpleCard';
 import TextView from './TextView';
@@ -12,10 +12,14 @@ export interface LinkCardProps {
 }
 
 const LinkCard = (props: LinkCardProps) => {
+    const [hovered, setHovered] = useState(false);
+    const hoverStyle = getHoverStyle(props.name);
+
     return (
-        <div className='link-card-container'>
+        <div className='link-card-container'
+            onMouseEnter={() => { setHovered(true) }} onMouseLeave={() => { setHovered(false) }} >
             <ExtLink className='link-referrer' href={getLinkFromName(props.name)}>
-                <SimpleCard className='link-card'>
+                <SimpleCard className='link-card' style={hovered ? hoverStyle : undefined}>
                     <Grid container spacing={2}>
                         <Grid className='centered-icon' item xs={2}>
                             {getIconFromName(props.name)}

@@ -6,7 +6,7 @@ import '../styles/SocialLinks.css'
 
 const SocialLinks = () => {
     return (
-        <Stack className='social-links' spacing={2.1}>
+        <Stack className='social-links' spacing={1.9}>
             <LinkCard name='CV' />
             <LinkCard name='GitHub' />
             <LinkCard name='LinkedIn' />

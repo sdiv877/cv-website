@@ -3,6 +3,8 @@ import { styled } from '@mui/material/styles';
 import { Button } from '@mui/material';
 import Email from '@mui/icons-material/Email'
 
+import { getHoverStyle } from '../utils/LinkCardUtil';
+
 interface EmailButtonProps extends React.HTMLAttributes<HTMLDivElement> { }
 
 const EmailButton = (props: EmailButtonProps) => {
@@ -19,9 +21,14 @@ const EmailButton = (props: EmailButtonProps) => {
     );
 }
 
+const hoverStyle = getHoverStyle('Email');
+
 const StyledButton = styled(Button)({
     textTransform: 'none',
-    fontFamily: '"Montserrat"'
+    fontFamily: '"Montserrat"',
+    color: 'black',
+    borderColor: 'black',
+    '&:hover': hoverStyle
 });
 
 export default EmailButton;
