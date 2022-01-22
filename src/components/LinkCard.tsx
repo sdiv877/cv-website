@@ -1,6 +1,7 @@
 import React from 'react';
+import { Grid } from '@mui/material';
 
-import { LinkName, getLinkFromName } from '../utils/LinkCardUtil';
+import { LinkName, getLinkFromName, getIconFromName } from '../utils/LinkCardUtil';
 import ExtLink from './ExtLink';
 import SimpleCard from './SimpleCard';
 import TextView from './TextView';
@@ -15,7 +16,15 @@ const LinkCard = (props: LinkCardProps) => {
         <div className='link-card-container'>
             <ExtLink className='link-referrer' href={getLinkFromName(props.name)}>
                 <SimpleCard className='link-card'>
-                    <TextView className='link-text'>{props.name}</TextView>
+                    <Grid container spacing={2}>
+                        <Grid className='centered-icon' item xs={2}>
+                            {getIconFromName(props.name)}
+                        </Grid>
+                        <Grid className='centered-text' item xs>
+                            <TextView>{props.name}</TextView>
+                        </Grid>
+                        <Grid className='empty-item' item xs={2} />
+                    </Grid>
                 </SimpleCard>
             </ExtLink>
         </div>

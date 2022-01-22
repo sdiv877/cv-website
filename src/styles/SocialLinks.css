@@ -3,6 +3,10 @@
     margin-left: auto;
     margin-right: auto;
 
+    /* Apply padding to social-links */
+    padding-left: 15px;
+    padding-right: 15px;
+
     /* Sets the size of all the link-cards */
     max-width: 650px;
 }
