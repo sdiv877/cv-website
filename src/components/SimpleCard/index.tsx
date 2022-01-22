@@ -4,8 +4,7 @@ import '../../styles/SimpleCard.css'
 
 interface SimpleCardProps extends React.HTMLAttributes<HTMLDivElement> { }
 
-const SimpleCard = (props: SimpleCardProps
-    ) => {
+const SimpleCard = (props: SimpleCardProps) => {
     return (
         <div className={`simple-card ${props.className}`} style={props.style}>
             {props.children}

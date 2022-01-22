@@ -6,9 +6,8 @@ import ExtLink from './ExtLink';
 import SimpleCard from './SimpleCard';
 import TextView from './TextView';
 import '../styles/LinkCard.css'
-import '../styles/Transitions.css'
 
-export interface LinkCardProps {
+interface LinkCardProps {
     name: LinkName
 }
 

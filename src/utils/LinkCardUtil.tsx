@@ -7,15 +7,15 @@ import { CV_PDF } from '../assets';
 
 export type LinkName = 'GitHub' | 'CV' | 'LinkedIn' | 'Email';
 
+type HoverColours = {
+    light: string,
+    dark: string
+}
+
 export type HoverStyle = {
     backgroundColor: string,
     color: string,
     borderColor: string
-}
-
-type HoverColours = {
-    light: string,
-    dark: string
 }
 
 const iconStyle = {

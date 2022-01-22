@@ -18,7 +18,7 @@ const EmailButton = (props: EmailButtonProps) => {
                     disableFocusRipple
                     disableTouchRipple
                     startIcon={<Email />}
-                    href={`mailto: ${emailAddress}`}
+                    href={`mailto:${emailAddress}`}
                 >
                     Email
                 </StyledButton>
