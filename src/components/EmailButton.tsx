@@ -15,6 +15,8 @@ const EmailButton = (props: EmailButtonProps) => {
             <Tooltip arrow title={EmailText}>
                 <StyledButton
                     variant='outlined'
+                    disableFocusRipple
+                    disableTouchRipple
                     startIcon={<Email />}
                     href={`mailto: ${emailAddress}`}
                 >

@@ -1,12 +1,15 @@
 import React from 'react';
 
+import Transition from '../Transition';
 import SocialLinks from '../SocialLinks';
 
 const BodyContainer = () => {
     return (
-        <div className='body-container'>
-            <SocialLinks />
-        </div>
+        <Transition animation='slide-left'>
+            <div className='body-container'>
+                <SocialLinks />
+            </div>
+        </Transition>
     );
 }
 
