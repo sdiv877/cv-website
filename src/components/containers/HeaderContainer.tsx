@@ -10,7 +10,7 @@ const HeaderContainer = () => {
         <Transition animation='slide-top'>
             <div className='header-container'>
                 <TextView className='name-text'>Syon Divekar</TextView>
-                <TextView className='qualification-text'>BE(Hons)/Computer Sytems</TextView>
+                <TextView className='qualification-text'>BE(Hons)/Computer Systems</TextView>
                 <EmailButton className='email-button' />
             </div >
         </Transition>
