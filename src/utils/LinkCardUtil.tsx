@@ -31,9 +31,9 @@ export const getLinkFromName = (name: LinkName): string => {
         case 'LinkedIn':
             return "https://linkedin.com/in/syon-divekar-6b3b25207"
         case 'Email':
-            return "sdiv877@aucklanduni.ac.nz"
+            return "syondivekar@gmail.com"
         default:
-            return "syondivekar.com"
+            return "syondivekar.nz"
     }
 }
 
